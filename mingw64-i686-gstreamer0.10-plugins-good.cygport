@@ -1,8 +1,8 @@
 CROSS_HOST="i686-w64-mingw32"
-GST_PLUGINS_ENABLE="aalib annodex cairo directsound esd flac gconf gdk_pixbuf
+GST_PLUGINS_ENABLE="aalib annodex cairo directsound flac gdk_pixbuf
 	jpeg libcaca libdv libpng shout2 soup speex taglib waveform wavpack"
-GST_PLUGINS_DISABLE="dv1394 gst_v4l2 hal jack oss oss4 osx_audio osx_video pulse
-	sunaudio x xvideo"
+GST_PLUGINS_DISABLE="dv1394 esd gconf gst_v4l2 hal jack oss oss4
+	osx_audio osx_video pulse sunaudio x xvideo"
 inherit cross gst-plugins
 
 NAME="mingw64-i686-gstreamer0.10-plugins-good"
